@@ -9,7 +9,8 @@ my_vector <- c(my_num, initials)
 vector_sum <- sum(my_vector)
 
 # Describe why this doesn't work: 
-# 
+# the value stored in the variable initials was not a number, so creating a sum for 
+# my_vector is not possible
 
 install.packages("stringr")
 
@@ -18,12 +19,13 @@ my_line <- "Hey, hey, this is the library"
 print(str_length(my_line))
 
 # Describe why this doesn't work: 
-# 
+# str_length is a variable that was never created
 
 said_the_famous <- paste(my_line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# initial is not a variable that exists. It should be initials if referring 
+# to the variable created in line 4
 
 
 ## Part 2 - Vector and function practice
